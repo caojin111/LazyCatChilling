@@ -9,6 +9,34 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LazyChillingExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>180A63E82DAD09C300787A30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>180BB0A62DA644CC00FD2556</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>180BB0B62DA644CD00FD2556</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>180BB0C02DA644CD00FD2556</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

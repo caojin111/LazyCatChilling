@@ -6,7 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		180A63EC2DAD09C300787A30 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180A63EB2DAD09C300787A30 /* WidgetKit.framework */; };
+		180A63EE2DAD09C300787A30 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180A63ED2DAD09C300787A30 /* SwiftUI.framework */; };
+		180A63FF2DAD09C400787A30 /* LazyChillingExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 180A63E92DAD09C300787A30 /* LazyChillingExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		180A63FD2DAD09C400787A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180BB09F2DA644CC00FD2556 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180A63E82DAD09C300787A30;
+			remoteInfo = LazyChillingExtension;
+		};
 		180BB0B82DA644CD00FD2556 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 180BB09F2DA644CC00FD2556 /* Project object */;
@@ -23,13 +36,48 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		180A64002DAD09C400787A30 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				180A63FF2DAD09C400787A30 /* LazyChillingExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		180A63E92DAD09C300787A30 /* LazyChillingExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LazyChillingExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		180A63EB2DAD09C300787A30 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		180A63ED2DAD09C300787A30 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		180BB0A72DA644CC00FD2556 /* LazyCatChilling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyCatChilling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		180BB0B72DA644CD00FD2556 /* LazyCatChillingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyCatChillingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180BB0C12DA644CD00FD2556 /* LazyCatChillingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyCatChillingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		180A64032DAD09C400787A30 /* Exceptions for "LazyChilling" folder in "LazyChillingExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 180A63E82DAD09C300787A30 /* LazyChillingExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		180A63EF2DAD09C300787A30 /* LazyChilling */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				180A64032DAD09C400787A30 /* Exceptions for "LazyChilling" folder in "LazyChillingExtension" target */,
+			);
+			path = LazyChilling;
+			sourceTree = "<group>";
+		};
 		180BB0A92DA644CC00FD2556 /* LazyCatChilling */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = LazyCatChilling;
@@ -48,6 +96,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		180A63E62DAD09C300787A30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180A63EE2DAD09C300787A30 /* SwiftUI.framework in Frameworks */,
+				180A63EC2DAD09C300787A30 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		180BB0A42DA644CC00FD2556 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,12 +129,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180A63EA2DAD09C300787A30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				180A63EB2DAD09C300787A30 /* WidgetKit.framework */,
+				180A63ED2DAD09C300787A30 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		180BB09E2DA644CC00FD2556 = {
 			isa = PBXGroup;
 			children = (
 				180BB0A92DA644CC00FD2556 /* LazyCatChilling */,
 				180BB0BA2DA644CD00FD2556 /* LazyCatChillingTests */,
 				180BB0C42DA644CD00FD2556 /* LazyCatChillingUITests */,
+				180A63EF2DAD09C300787A30 /* LazyChilling */,
+				180A63EA2DAD09C300787A30 /* Frameworks */,
 				180BB0A82DA644CC00FD2556 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +156,7 @@
 				180BB0A72DA644CC00FD2556 /* LazyCatChilling.app */,
 				180BB0B72DA644CD00FD2556 /* LazyCatChillingTests.xctest */,
 				180BB0C12DA644CD00FD2556 /* LazyCatChillingUITests.xctest */,
+				180A63E92DAD09C300787A30 /* LazyChillingExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +164,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		180A63E82DAD09C300787A30 /* LazyChillingExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180A64042DAD09C400787A30 /* Build configuration list for PBXNativeTarget "LazyChillingExtension" */;
+			buildPhases = (
+				180A63E52DAD09C300787A30 /* Sources */,
+				180A63E62DAD09C300787A30 /* Frameworks */,
+				180A63E72DAD09C300787A30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				180A63EF2DAD09C300787A30 /* LazyChilling */,
+			);
+			name = LazyChillingExtension;
+			packageProductDependencies = (
+			);
+			productName = LazyChillingExtension;
+			productReference = 180A63E92DAD09C300787A30 /* LazyChillingExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		180BB0A62DA644CC00FD2556 /* LazyCatChilling */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 180BB0CB2DA644CD00FD2556 /* Build configuration list for PBXNativeTarget "LazyCatChilling" */;
@@ -102,10 +193,12 @@
 				180BB0A32DA644CC00FD2556 /* Sources */,
 				180BB0A42DA644CC00FD2556 /* Frameworks */,
 				180BB0A52DA644CC00FD2556 /* Resources */,
+				180A64002DAD09C400787A30 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				180A63FE2DAD09C400787A30 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				180BB0A92DA644CC00FD2556 /* LazyCatChilling */,
@@ -173,6 +266,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					180A63E82DAD09C300787A30 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					180BB0A62DA644CC00FD2556 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -203,11 +299,19 @@
 				180BB0A62DA644CC00FD2556 /* LazyCatChilling */,
 				180BB0B62DA644CD00FD2556 /* LazyCatChillingTests */,
 				180BB0C02DA644CD00FD2556 /* LazyCatChillingUITests */,
+				180A63E82DAD09C300787A30 /* LazyChillingExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		180A63E72DAD09C300787A30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		180BB0A52DA644CC00FD2556 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +336,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		180A63E52DAD09C300787A30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		180BB0A32DA644CC00FD2556 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +367,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		180A63FE2DAD09C400787A30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180A63E82DAD09C300787A30 /* LazyChillingExtension */;
+			targetProxy = 180A63FD2DAD09C400787A30 /* PBXContainerItemProxy */;
+		};
 		180BB0B92DA644CD00FD2556 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 180BB0A62DA644CC00FD2556 /* LazyCatChilling */;
@@ -269,6 +385,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		180A64012DAD09C400787A30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FKKYF3QVJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LazyChilling/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LazyChilling;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LazyCat.LazyCatChilling.LazyChilling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		180A64022DAD09C400787A30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FKKYF3QVJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LazyChilling/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LazyChilling;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LazyCat.LazyCatChilling.LazyChilling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		180BB0C92DA644CD00FD2556 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -404,6 +574,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +604,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,6 +693,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		180A64042DAD09C400787A30 /* Build configuration list for PBXNativeTarget "LazyChillingExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180A64012DAD09C400787A30 /* Debug */,
+				180A64022DAD09C400787A30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		180BB0A22DA644CC00FD2556 /* Build configuration list for PBXProject "LazyCatChilling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
